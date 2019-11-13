@@ -1,8 +1,8 @@
 package by.pvt.controller;
 
-import lombok.Data;
-
 import java.util.Date;
+
+import lombok.Data;
 
 @Data
 public class CreateDeviceCmd {

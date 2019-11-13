@@ -11,19 +11,13 @@
     </parent>
 
     <groupId>by.pvt</groupId>
-    <artifactId>myDataReceiverService</artifactId>
+    <artifactId>service</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-    <properties>
-        <main.basedir>${basedir}/../..</main.basedir>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-    </properties>
 
     <dependencies>
         <dependency>
             <groupId>by.pvt</groupId>
-            <artifactId>mymodel</artifactId>
+            <artifactId>entity</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -67,5 +61,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

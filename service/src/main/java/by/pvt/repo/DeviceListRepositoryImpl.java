@@ -1,12 +1,12 @@
 package by.pvt.repo;
 
 
-import by.pvt.pojo.Device;
-import org.springframework.stereotype.Repository;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import by.pvt.pojo.Device;
+import org.springframework.stereotype.Repository;
 
 @Repository
 public class DeviceListRepositoryImpl {
