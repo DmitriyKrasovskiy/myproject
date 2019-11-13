@@ -9,10 +9,10 @@
         <sql>
             create table if not exists `role`(
             `id` integer not null primary key,
-            `role_name` varchar(100) not null
+            `roleName` varchar(100) not null
             );
-            insert into `role` (`id`, `role_name`) values(1,'ANALYST');
-            insert into `role` (`id`, `role_name`) values(2,'ADMIN');
+            insert into `role` (`id`, `roleName`) values(1,'ANALYST');
+            insert into `role` (`id`, `roleName`) values(2,'ADMIN');
         </sql>
     </changeSet>
 </databaseChangeLog>
