@@ -41,9 +41,9 @@ public class DeviceListService {
     public void create(CreateDeviceCmd cmd){
         Device item = new Device();
         item.setId((long)Math.random()*100);
-        item.setName("Sensor");
+        item.setName("SpeedCam");
         item.setIpAddress("000.000.000.001");
-        item.setLocation("Minsk");
+        item.setLocation("M1-365km");
         item.setValue(cmd.getValue());
         item.setDate(new Date());
 

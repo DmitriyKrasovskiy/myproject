@@ -8,18 +8,24 @@
 <table class="table">
   <thead class="thead-light">
     <tr>
-      <th scope="col">S/N</th>
-      <th scope="col">Device IP Address</th>
-      <th scope="col">Device Location</th>
-      <th scope="col">Number of sensors</th>
+      <th scope="col">Device ID</th>
+           <th scope="col">SpeedCam ID</th>
+                 <th scope="col">SpeedCam Name</th>
+                 <th scope="col">IP Address</th>
+                 <th scope="col">SpeedCam Location</th>
+                 <th scope="col">Speed Time</th>
+                 <th scope="col">Speed Value</th>
     </tr>
   </thead>
   <tbody>
-    <c:forEach var="device" items="${devices}">
+  <c:forEach var="device" items="${device}">
     <tr>
       <th scope="row">${device.id}</th>
-      <td>${device.name}</td>
+      <td><a href="${pageContext.request.contextPath}/device/device/${device.id}">${device.name}</a></td>
+      <td>${device.ipAddress}</td>
       <td>${device.location}</td>
+      <td>${device.date}</td>
+      <td>${device.value}</td>
     </tr>
     </c:forEach>
   </tbody>

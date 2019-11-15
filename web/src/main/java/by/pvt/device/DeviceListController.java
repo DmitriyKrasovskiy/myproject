@@ -19,7 +19,7 @@ public class DeviceListController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String showDeviceList(Model model){
-        List<Device> device = deviceListService.searchDeviceByLocation("М1 265км");
+        List<Device> device = deviceListService.searchDeviceByLocation("M1-365km");
         model.addAttribute("device", device);
         return "deviceListPage";
     }

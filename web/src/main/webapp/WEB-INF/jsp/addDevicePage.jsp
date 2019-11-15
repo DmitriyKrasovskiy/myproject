@@ -7,7 +7,7 @@
 <form action = "${pageContext.request.contextPath}/addDevice/device" method = "POST" enctype="multipart/form-data">
   <div class="form-group">
       <label for="exampleInputEmail1">Device Name</label>
-      <input type="number" name ="name" class="form-control" id="exampleInputPassword1" placeholder="Enter name of device">
+      <input type="text" name ="name" class="form-control" id="exampleInputPassword1" placeholder="Enter name of device">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Device IP Address</label>

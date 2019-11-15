@@ -14,7 +14,7 @@ import by.pvt.pojo.Device;
 import java.util.List;
 
 @Controller
-@RequestMapping("/search")
+@RequestMapping("search")
 public class SearchController {
 
     @Autowired
@@ -22,8 +22,8 @@ public class SearchController {
 
     @GetMapping
     public String search (@RequestParam String searchStr, Model model){
-        List<Device> devices =deviceListService.searchDeviceByipAddress(searchStr);
-        model.addAttribute("devices", devices);
+        List<Device> devices =deviceListService.searchDeviceByLocation(searchStr);
+        model.addAttribute("device", devices);
         return "searchResultPage";
 
     }

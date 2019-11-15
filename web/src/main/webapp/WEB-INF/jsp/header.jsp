@@ -25,7 +25,7 @@
                 <a class="nav-link" href="${pageContext.request.contextPath}/home">Home page <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="${pageContext.request.contextPath}/deviceList">Device List Page</a>
+          <a class="nav-link" href="${pageContext.request.contextPath}/deviceList">SpeedCam Page</a>
         </li>
 
 <sec:authorize access="!isAuthenticated()">

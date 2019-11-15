@@ -1,6 +1,7 @@
 package by.pvt;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,7 +13,8 @@ import java.util.logging.Logger;
 @RequestMapping("/home")
 public class HomeController {
 
-    private static Logger log=Logger.getLogger("HomeController");
+    private static Logger log = Logger.getLogger("HomeController");
+
 
     public HomeController() {
     }

@@ -3,33 +3,37 @@
 
 <jsp:include page = "header.jsp"/>
 
-<h1>Device List Page</h1>
 
-<sec:authorize access="hasRole('ADMIN')">
-<a class="btn btn-primary" href = "${pageContext.request.contextPath}/addDevice" role ="button">Add New Device</button></a>
-</sec:authorize>
 
 
 <table class="table">
   <thead class="thead-dark">
     <tr>
-      <th scope="col">Device ID</th>
-      <th scope="col">Device Name</th>
-      <th scope="col">Device IP Address</th>
-      <th scope="col">Device Location</th>
-      <th scope="col">Device Time</th>
-      <th scope="col">Device Value</th>
+      <th scope="col">SpeedCam ID</th>
+      <th scope="col">SpeedCam Name</th>
+      <th scope="col">IP Address</th>
+      <th scope="col">SpeedCam Location</th>
+      <th scope="col">Speed Time</th>
+      <th scope="col">Speed Value</th>
     </tr>
   </thead>
   <tbody>
-  <c:forEach var="device" items="${devices}">
+  <c:forEach var="device" items="${device}">
     <tr>
       <th scope="row">${device.id}</th>
-      <td><a href="${pageContext.request.contextPath}/device/item/${device.id}">${device.name}</a></td>
+      <td><a href="${pageContext.request.contextPath}/device/device/${device.id}">${device.name}</a></td>
+      <td>${device.ipAddress}</td>
+      <td>${device.location}</td>
+      <td>${device.date}</td>
       <td>${device.value}</td>
     </tr>
     </c:forEach>
   </tbody>
 </table>
+
+<sec:authorize access="hasRole('ADMIN')">
+<a class="btn btn-primary" href = "${pageContext.request.contextPath}/addDevice" role ="button">Add New Device</button></a>
+</sec:authorize>
+
 <jsp:include page = "chart.jsp"/>
 <jsp:include page = "footer.jsp"/>

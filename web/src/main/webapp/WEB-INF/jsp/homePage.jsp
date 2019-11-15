@@ -7,7 +7,7 @@
 
 <html>
 <body>
-       <img src="SpeedCamFoto.jpg"/>
+       <img src="SpeedCamPhoto.jpg" width="1350" height="500"/>
 </body>
 </html>
 
