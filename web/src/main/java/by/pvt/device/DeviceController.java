@@ -21,7 +21,7 @@ public class DeviceController {
     @GetMapping("device/{id}")
     public String showDeviceItem(@PathVariable Long id, Model model){
 
-        Device device =deviceListService.getDeviceById(id);
+        Device device =deviceListService.getDevice(id);
 
         model.addAttribute("device", device);
         return "deviceDetailsPage";

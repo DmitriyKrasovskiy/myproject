@@ -42,7 +42,7 @@ public class DeviceListService {
         Device item = new Device();
         item.setId((long)Math.random()*100);
         item.setName("SpeedCam");
-        item.setIpAddress("000.000.000.001");
+        item.setIpAddress("000.000.007");
         item.setLocation("M1-365km");
         item.setValue(cmd.getValue());
         item.setDate(new Date());

@@ -18,6 +18,11 @@
       <input type="text" name="location" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter location">
   </div>
 
+    <div class="form-group">
+        <label for="exampleInputEmail1">Device Value</label>
+        <input type="number" name="value" class="form-control" id="exampleInputPassword" aria-describedby="emailHelp" placeholder="Enter value">
+    </div>
+
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

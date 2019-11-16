@@ -8,8 +8,7 @@
 <table class="table">
   <thead class="thead-light">
     <tr>
-      <th scope="col">Device ID</th>
-           <th scope="col">SpeedCam ID</th>
+      <th scope="col">SpeedCam ID</th>
                  <th scope="col">SpeedCam Name</th>
                  <th scope="col">IP Address</th>
                  <th scope="col">SpeedCam Location</th>

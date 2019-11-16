@@ -18,23 +18,27 @@ public class DeviceListService {
     DeviceRepository deviceRepository;
 
     @Transactional
+    public List<Device> getAllDevices(){
+        return deviceRepository.findDevice(20);
+    }
+
+    @Transactional
     public List<Device> searchDeviceByipAddress(String searchStr){
         return deviceRepository
                 .findDeviceByIPAddress(searchStr);
     }
 
     @Transactional
-    public Device getDeviceById (Long id){
-        return catalog.stream()
-                .filter(device -> device.getId().equals(id))
-                .findFirst()
-                .orElseThrow();
+    public Device getDevice(Long id){
+        return deviceRepository.findDeviceById(id);
     }
 
     @Transactional
     public List<Device> searchDeviceByLocation(String searchStr){
         return deviceRepository.findDeviceByLocation(searchStr);
     }
+
+
 
 
     @Transactional

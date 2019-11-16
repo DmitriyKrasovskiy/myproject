@@ -22,6 +22,14 @@ public class DeviceRepository {
 
     static List<Device> catalog =new ArrayList<>();
 
+    public List<Device> findDevice(int count){
+        log.info("Call findDevice()");
+        return sessionFactory.getCurrentSession()
+                .createQuery("from Device", Device.class)
+                .setMaxResults(count)
+                .list();
+    }
+
     public List<Device> findDeviceByIPAddress(String searchStr){
         return sessionFactory.getCurrentSession()
                 .createQuery("from Device d where d.ipAddress like :param1", Device.class)
@@ -34,6 +42,8 @@ public class DeviceRepository {
         return sessionFactory.getCurrentSession()
                 .get(Device.class,id);
     }
+
+
 
     public List <Device> findDeviceByLocation(String searchStr){
         return sessionFactory.getCurrentSession()

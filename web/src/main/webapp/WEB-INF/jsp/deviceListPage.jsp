@@ -11,7 +11,6 @@
     <tr>
       <th scope="col">SpeedCam ID</th>
       <th scope="col">SpeedCam Name</th>
-      <th scope="col">IP Address</th>
       <th scope="col">SpeedCam Location</th>
       <th scope="col">Speed Time</th>
       <th scope="col">Speed Value</th>
